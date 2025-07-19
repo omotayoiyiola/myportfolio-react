@@ -1,32 +1,82 @@
 .subscription {
   background-color: black;
   color: white;
-  padding: 60px 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  gap: 60px;
 }
 
 .subscription .card {
   background-color: #0b0b0b;
-  padding: 100px 60px;
-  width: 800px;
-  margin: 0 auto;
+  padding: 30px 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .social {
   display: flex;
-  gap: 10px;
-  align-content: center;
+  gap: 30px;
 }
 
 .bigText {
   font-size: 1.5em;
   font-weight: 700;
   font-family: 'proxima-nova-condensed', 'Helvetica', arial, sans-serif;
+  word-spacing: 7px;
+  letter-spacing: 3px;
 }
 
 .subText {
-  width: 500px;
+  width: 400px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff671f;
+  padding: 18px 90px;
+  border-radius: 999px;
+  border: none;
+}
+
+input {
+  padding: 18px 115px;
+  border-radius: 999px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-style {
+  margin-bottom: 20px;
+}
+
+.radio-style label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.radio-style label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid orangered;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked + label::before {
+  background-color: #ff671f;
 }

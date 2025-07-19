@@ -1,0 +1,27 @@
+.hero-card {
+  display: flex;
+  background-color: rgb(240, 245, 245);
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-card .left .hero-text {
+  color: black;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.hero-card .right img {
+  width: 360px;
+}
+
+.description {
+  color: gray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-card .left button {
+  padding: 10px 20px;
+  background-color: rgb(152, 101, 167);
+}

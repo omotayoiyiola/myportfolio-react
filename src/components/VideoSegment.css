@@ -1,0 +1,21 @@
+.cr7 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.cr7-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cr7-hash {
+  position: relative;
+  z-index: 10;
+  color: #ff671f;
+  margin: 40px 30px;
+}
